@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Selamat Ulang Tahun!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      overflow: hidden; /* Mencegah scroll di halaman */
+    }
+
+    .birthday-card {
+      display: none;
+      position: relative;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      z-index: 1; /* Menempatkan kartu di lapisan teratas */
+    }
+
+    h1 {
+      color: #e44d26;
+    }
+
+    p {
+      color: #333;
+    }
+
+    /* Animasi Balon */
+    .balloon {
+      position: absolute;
+      background-color: #e44d26;
+      border-radius: 50%;
+      animation: float 5s infinite;
+      z-index: 0; /* Menempatkan balon di bawah kartu */
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Animasi Kue */
+    .cake {
+      position: absolute;
+      animation: rotate 3s infinite;
+      z-index: 0; /* Menempatkan kue di bawah kartu */
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Tombol Surat */
+    .letter-button {
+      cursor: pointer;
+      z-index: 2; /* Menempatkan tombol di lapisan teratas */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol Surat -->
+  <div class="letter-button" onclick="showBirthdayCard()">
+    <img src="letter.webp" alt="Surat" style="width: 100px; height: 100px;">
+  </div>
+
+  <!-- Kartu Ulang Tahun -->
+  <div class="birthday-card">
+    <h1>Selamat Ulang Tahun!</h1>
+    <p>Selamat ulang tahun yang ke [umur]! Semoga hari Anda penuh dengan kebahagiaan dan keceriaan.</p>
+    <p>Terima kasih telah menjadi bagian dari hidup kami.</p>
+    <p>Best wishes,<br> [Nama Anda]</p>
+
+    <!-- Balon-balon -->
+    <div class="balloon" style="top: 50px; left: 50px; width: 20px; height: 20px;"></div>
+    <div class="balloon" style="top: 100px; left: 150px; width: 30px; height: 30px;"></div>
+    <div class="balloon" style="top: 20px; left: 300px; width: 25px; height: 25px;"></div>
+
+    <!-- Kue -->
+    <img class="cake" src="cake.webp" alt="Kue Ulang Tahun" style="width: 80px; height: 80px; top: 200px; left: 100px;">
+  </div>
+
+  <script>
+    // Fungsi untuk menampilkan kartu ulang tahun
+    function showBirthdayCard() {
+      var card = document.querySelector('.birthday-card');
+      card.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
