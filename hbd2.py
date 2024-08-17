@@ -11,7 +11,7 @@ audio_bytes = audio_file.read()
 st.audio(audio_bytes, format='audio/mp3', start_time=25, autoplay=True)
 
 # Judul ucapan ulang tahun
-st.markdown("<h1 style='text-align: center; color: blue;font-size: 30px;'>Selamat Ulang Tahun!</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: blue;font-size: 20px;'>Selamat Ulang Tahun!</h1>", unsafe_allow_html=True)
 
 # Menambahkan balon-balon
 html_balloons = """
