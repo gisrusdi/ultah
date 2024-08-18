@@ -9,12 +9,12 @@ st.set_page_config(page_title="Ucapan Ulang Tahun", page_icon="🎉", layout="ce
 # Menambahkan musik latar belakang
 audio_file = open("music.mp3", "rb")
 audio_bytes = audio_file.read()
-st.audio(audio_bytes, format='audio/mp3', loop=True, autoplay=True)
+
 
 # Judul ucapan ulang tahun
 st.markdown("<h1 style='text-align: center; color: blue;font-size: 50px;'>Selamat Ulang Tahun!</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: grey;font-size: 20px;'>Untukmu wanita yang aku sayang</h2>", unsafe_allow_html=True)
-
+st.audio(audio_bytes, format='audio/mp3', loop=True, autoplay=True)
 # Menambahkan balon-balon
 html_balloons = """
 <script>
