@@ -82,6 +82,7 @@ if st.button("Klik disini untuk hadiah ") or st.session_state.clicked_1:
     Selamat menua, Luxy! 🎉
 
     Weeeh, tambah tua aja nih, semoga makin bijak dan makin makin lainnya ......
+    
     Semoga semua mimpi dan cita-cita kamu segera tercapai, termasuk yang satu itu—cepat lulus dan cepet nikah, hahaha! 🎓💍
 
     Tetap semangat menjalani hari-hari, jangan lupa untuk selalu bahagia dan menikmati setiap momen. Terima kasih udah jadi teman yang luar biasa, semoga di tahun yang baru ini, kamu semakin sukses, sehat, dan diberkahi dengan banyak kebahagiaan.
@@ -121,4 +122,4 @@ if st.button("Klik disini untuk hadiah ") or st.session_state.clicked_1:
             if st.button("Terakhir") or st.session_state.clicked_4:
                 st.session_state.clicked_4 = True
                 st.markdown(f"<h2 style='text-align: center; color: black;font-size: 35px;'>SELAMAT BERTAMBAH TUA 👵</h2>", unsafe_allow_html=True)
-                st.markdown("<h3 style='text-align: center;font-size: 25px;'>🎂 Happy 25 luxxxx! 🎂</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center;font-size: 25px;'>🎂 Happy 25 lux! 🎂</h3>", unsafe_allow_html=True)
