@@ -94,7 +94,7 @@ if st.button("Klik disini untuk hadiah ") or st.session_state.clicked_1:
     st.markdown(f"<h2 style='text-align: justify; color: grey;font-size: 15px;'>{text1_html}</h2>", unsafe_allow_html=True)
 
     # Tombol kedua
-    if st.button("Ini Beneran disini hadiahnya 🚀🚀 ") or st.session_state.clicked_2:
+    if st.button("Ini Beneran disini hadiahnya 🚀 ") or st.session_state.clicked_2:
         st.session_state.clicked_2 = True
         st.image("IMG_20240523_113306_205.jpg")
         text2 = """
